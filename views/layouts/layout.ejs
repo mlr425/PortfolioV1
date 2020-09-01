@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
+  <!-- https://stackoverflow.com/questions/5588658/auto-reload-browser-when-i-save-changes-to-html-file-in-chrome  so cool! -->
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+
+  <title>Portfolio</title>
+</head>
+<!-- this is like the MAIN page -->
+<body>
+  <div class="container"> 
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container"></div>
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- body %>
+    </div>
+  </div>
+</body>
+</html>

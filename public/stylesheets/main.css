@@ -1,0 +1,11 @@
+@import 'shared/variables.css';
+@import 'shared/header.css';
+body{
+    background: white;
+}
+
+.my-name{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
