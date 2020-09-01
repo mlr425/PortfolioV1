@@ -7,8 +7,8 @@
   <link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
   <!-- https://stackoverflow.com/questions/5588658/auto-reload-browser-when-i-save-changes-to-html-file-in-chrome  so cool! -->
   <script type="text/javascript" src="http://livejs.com/live.js"></script>
-
-  <title>Portfolio</title>
+  
+  <title> Portfolio</title>
 </head>
 <!-- this is like the MAIN page -->
 <body>
@@ -17,7 +17,31 @@
     <div class="inner-container"></div>
       <%- include('../partials/errorMessage.ejs') %>
       <%- body %>
+      
     </div>
   </div>
 </body>
+
+<footer>
+
+  <div class="the-footer-info">
+    <div class="my-links">
+
+      
+      <ul>
+          <span id='my-links-title'> My links</span>
+          <li><a href="https://github.com/mlr425/"> >Github </a></li>
+          <li><a href="https://www.linkedin.com/in/mlr425/"> >LinkedIn </a></li>
+          <li><a href="https://leetcode.com/mlr425/"> >LeetCode </a></li>
+          <li> >Mattrod425@gmail.com </a></li>
+      </ul>
+  </div>
+
+    <!-- <span id="my-email"> Email: mattrod425@gmail.com </span> -->
+    
+  </div>
+
+
+</footer>
+
 </html>

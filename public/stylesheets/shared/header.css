@@ -9,7 +9,10 @@
     text-decoration: none;
     font-size: var(--nav-title-font-size);
     font-weight: var(--nav-title-font-weight);
+    padding-left:50px;
 }
+
+
 
 .header-nav{
     display: flex;
@@ -17,6 +20,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
+    
+    color:black;
     
 }
 
