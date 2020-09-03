@@ -1,9 +1,30 @@
 @import 'shared/variables.css';
 @import 'shared/header.css';
+@import 'contactMe.css';
+
 body{
     background-color: white;
     background-image: url('../squairy.png');
     image-rendering: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#big-hand{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:10%; 
+    /* i dont want the hand rn, increase width to make it appear */
+}
+
+#down-arrow-pos{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:15%;
 }
 
 .flexbox-container{
@@ -23,44 +44,100 @@ body{
     margin: 5px;
 }
 
-.flexbox-col1{
-    min-height: 100px;
-    max-height:  150px;
+.flexbox-col0{
+    /* border: 3px solid #333;  */
+    justify-content: center;
+    align-content: center;
     
-    border: 3px black solid;
+    min-height: 650px;
+    min-width:500px;
+    
+
+}
+
+/* portrait */
+.flexbox-col1{
+    min-height: 150px;
+    max-height:  250px;
+    
+    /* border: 1px black solid; */
 
     background-image: url("../aigen.PNG");
     background-repeat: no-repeat;
     background-size: 200px 150px;
+    /* box-shadow: 0 8px 6px -6px black; */
     
 }
 
 .flexbox-col2{
     /* border: 3px solid #333; */
-    border-left:red 1px solid;
+    border-left:red 2px solid;
+    /* border-top:red 2px solid; */
     align-self: center;
     min-height: 500px;
-    max-width: 500px;
+    min-width: 500px;
     flex-grow:1;
     padding-left: 10px;
-
+    box-shadow: 5px 5px 5px -1px grey;
+    
+    
 }
 
-/* .flexbox-bottom{
-    
-    border:red 1px solid;
-    
-    display: flex;
-    align-items: center;
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:  500px 250px;
+    grid-auto-rows: minmax(150px, auto);
+    /* grid-column-gap: 150px; */
     justify-content: center;
-    min-width: 1000px;
-    min-height: 500px;
+    /* justify-items: stretch; 
+    align-items: stretch; */
 
-    margin-left:auto;
-    margin-right:auto;
+    /* height: 100vh; */
+    
 
-} */
+    
+}
 
+.grid-item{
+    /* border:1px solid green; */
+}
+  
+.grid-item1 {
+    grid-column-start:1;
+    grid-column-end:-1;
+    align-self: start;
+    justify-self: center;
+    /* border: 1px green solid; */
+}
+
+/* portrait */
+.grid-item2 {
+    align-self: start;
+    justify-self: center;
+    background-color: black;
+    border: 1px black solid;
+    /* border-radius: 100px; */
+    
+    
+}
+
+.grid-item3 {
+    align-self: start;
+    justify-self: center;
+    /* border: 1px green solid; */
+    
+}
+
+
+#hello-name{
+    margin:auto;
+    text-align: center;
+    font-size: 50px;
+}
 
 #about-me-text{
     font-size:25px;
@@ -91,3 +168,5 @@ body{
     text-decoration: underline;
     
 }
+
+

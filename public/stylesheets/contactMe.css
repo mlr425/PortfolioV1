@@ -1,0 +1,54 @@
+.grid-container-2{
+    /* border: 1px solid green; */
+    display:grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: minmax(150px, auto);
+    
+    /* border: 1px solid green; */
+    justify-content: center;
+    
+}
+
+.grid-item-contact{
+    padding:10px;
+    /* border: 1px solid green; */
+    align-content: center;
+}
+
+.grid-container-2 .formBox .inputBox-name{
+    text-align: center;
+}
+
+/* .inputBox-name{
+    text-align: center;
+} */
+
+.inputBox-email{
+    text-align: center;
+    
+    
+}
+
+.inputBox-message{
+    text-align: center;
+}
+
+
+.formBox{
+    background-color: white;
+    min-height: 500px;
+    min-width:500px;
+    
+    
+}
+
+textarea{
+   width:400px;
+   height:150px;
+   background-color: white;
+}
+
+#contact-me-title{
+    text-align: center;
+    text-decoration: underline;
+}
