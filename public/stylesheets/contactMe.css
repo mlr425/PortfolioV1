@@ -36,10 +36,9 @@
 
 .formBox{
     background-color: white;
-    min-height: 500px;
+    min-height: 100px;
     min-width:500px;
-    
-    
+    border: 1px green solid;
 }
 
 textarea{
