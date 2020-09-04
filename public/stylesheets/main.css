@@ -113,8 +113,8 @@ html{
     grid-column-end:-1;
     align-self: start;
     justify-self: center;
-    min-height: 800px;
-    border: 1px green solid;
+    min-height: 850px;
+    /* border: 1px green solid; */
 }
 
 /* portrait */
